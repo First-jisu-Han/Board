@@ -31,7 +31,7 @@ public class UserDAO {
             // rs이 작동된다면 ( 아이디가 존재한다면 )
             if(rs.next()){
                 if(rs.getString(1).equals(userPassword)){
-                    return 1;  // 로그인이 성공한 것
+                    return 1;  // 로그인이 성공
                 }
                 else return 0; // 비밀번호 오류
             }
